@@ -1,4 +1,4 @@
-default: run
+default: build
 
 .PHONY: install
 install:
@@ -7,3 +7,7 @@ install:
 .PHONY: update
 update:
 	@go mod tidy && go get -u ./...
+
+.PHONY: build
+build:
+	@go build -o cep-server main.go

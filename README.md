@@ -23,10 +23,10 @@ git clone https://github.com/yourusername/cep-mcp-server
 cd cep-mcp-server
 
 # Install dependencies
-go mod download
+make install
 
 # Build the server
-go build -o cep-server main.go
+make build
 ```
 
 ### Usage with Claude Desktop
