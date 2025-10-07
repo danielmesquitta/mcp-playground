@@ -19,8 +19,8 @@ An MCP (Model Context Protocol) server written in Go that provides Brazilian ZIP
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/cep-mcp-server
-cd cep-mcp-server
+git clone https://github.com/danielmesquitta/mcp-playground
+cd mcp-playground
 
 # Install dependencies
 make install
@@ -44,7 +44,7 @@ Add to your Claude Desktop configuration file (`claude_desktop_config.json`):
 }
 ```
 
-Restart Claude Desktop and you can now use the `lookup_address` tool!
+Restart Claude Desktop, and you can now use the `lookup_address` tool!
 
 ## Tool: lookup_address
 
@@ -64,10 +64,6 @@ State: SP
 CEP: 01310-100
 ```
 
-## Tutorial
-
-For a comprehensive step-by-step tutorial on how this server was built, see [TUTORIAL.md](TUTORIAL.md).
-
 ## API Reference
 
 This server uses the Brasil API CEP endpoint:
@@ -75,14 +71,6 @@ This server uses the Brasil API CEP endpoint:
 ```
 GET https://brasilapi.com.br/api/cep/v1/{cep}
 ```
-
-## License
-
-MIT License - feel free to use this in your own projects!
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## Acknowledgments
 
